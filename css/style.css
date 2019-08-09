@@ -1,0 +1,225 @@
+
+body{
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/*Configuracion barra horizontal*/
+
+header{
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header img{
+  height: 1.5rem;
+  margin-left: 0.2rem;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.logo{
+  object-fit: scale-down;
+}
+
+.barraDecoration{
+  color: rgba(0, 0, 0, 0.45);
+  text-decoration: none;
+  padding: 0.2rem;
+}
+
+.barra{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-left: -1.5rem;
+}
+/* /home/natali/Documentos/BootcampWeb/bootcamp-web-bootcamp/images/hero.jpg */
+
+.hero{
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  height: 400px;
+  width:100%;
+
+}
+
+.hoover{
+  padding-top: 50%;
+  text-align: left;
+  font-weight: bold;
+  color: azure;
+  text-transform: uppercase;
+  height: auto;
+  padding-left: 15%;
+  margin: 0rem auto;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+  font-size: 2rem;
+}
+
+.cuadradito {
+  top:167px;
+  position: absolute;
+  background-color: #ff5d5d;
+  width: 0.1rem;
+  height: 1rem;
+  padding-right: 0.5rem;
+  padding-top: 71px;
+  margin-top: 1.5rem;
+}
+
+.containerHero{
+  width: 15rem;
+}
+
+/* Configuracion parrafo comunidad met */
+
+.titulo{
+  color: #ff5d5d;
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.06;
+  }
+
+.centrarParrafo{
+    text-align: center;
+}
+
+.subtitulo{
+  font-size: 1.5rem; 
+  font-weight: normal;
+}
+
+.pCentrado{
+  margin: 0 1.875rem;
+}
+/* Parrafo bootcamp */
+
+#Bootcamp{
+  background-color: #f5f6f8;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+#Bootcamp h2{
+  margin-left: -6.5px;
+}
+.centrarImagen{
+  object-fit: cover;
+}
+
+/* Formulario*/
+
+form{
+  margin-right: 2.5rem;
+  /* padding-right: 2rem; */
+  text-align: center;
+  margin-left: 2.5rem;
+}
+
+form label{
+  display: block;
+  padding: 0.5rem 0.01rem;
+  text-align: left;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.45);
+  margin-left: -0.5rem;
+}
+
+form button{
+  background-color:#e24752;
+  color: #f5f6f8;
+  border-radius: 0.5rem; 
+  margin-bottom: 2rem;
+  padding: 0.5rem 2rem;
+}
+
+form div{
+  margin: 1rem;
+}
+
+form input,textarea {
+  width: 100%;
+  height: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding-left: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin-left: -0.5rem;
+}
+
+form textarea{
+  height: auto;
+}
+
+.contaninerForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .TelefonoForm{
+  height: 3rem;
+} */
+
+
+/* ::placeholder{
+  color: rgba(0, 0, 0, 0.8); 
+} */
+
+
+/* Config Footer */
+footer{
+  padding: 0.5rem;
+  background-color: #e24752;
+}
+
+footer img{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  
+}
+
+footer p{
+  color: #ffffff;
+  font-size: 0.8125rem;
+}
+
+.redesSociales{
+  margin-top: -1rem;
+}
+
+/* Conf generales - otras */
+p{
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.negrita{
+  font-weight: bold;
+}
+
+@media screen and (min-width: 480px){
+  .cuadradito{
+    width: 2%;
+    height: 10%;
+    padding: 0.2rem;
+
+  }
+   
+  .ordenarTexto{
+    width: 30%;
+    height: 100%;
+
+  }
+  
+}
