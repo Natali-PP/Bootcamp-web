@@ -3,6 +3,7 @@ body{
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 /*Configuracion barra horizontal*/
@@ -108,10 +109,6 @@ ul{
   display: flex;
   flex-direction: column;
 }
-
-#Bootcamp h2{
-  margin-left: -6.5px;
-}
 .centrarImagen{
   object-fit: cover;
 }
@@ -208,12 +205,16 @@ p{
   font-weight: bold;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 650px){
+
+  /* Redimensionar con nuevos márgenes */
   #Bootcamp,
   #Nosotras,
   #Contacto{
     margin: 4rem 8.125rem;
   }
+
+  /* Ajustes al nav bar */
   .container-grid-nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -224,6 +225,10 @@ p{
     grid-column: -1/ -2;
     padding: 0 3rem;
   }
+
+  /* 
+  Ajustes al hero, hoover y cuadradito
+   */
   .hero{
     display: grid;
     grid-template-columns: 106px 1fr;
@@ -251,6 +256,32 @@ p{
     margin-top: 10px;
   }
 
+  /* Distribución desktop */
+  #Bootcamp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,auto);
+  }
+
+  #Bootcamp .titulo{
+    grid-column: 1/-1;
+  }
+
+  #Bootcamp img{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    justify-self: center;
+    object-fit: contain;
+    align-self: center;
+  }
+
+  .containerForm{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 1fr 1fr 2.5fr;
+  }
+
+  
 
 
 }
