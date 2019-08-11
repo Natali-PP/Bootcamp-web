@@ -16,8 +16,9 @@ header{
 }
 
 header img{
-  height: 1.5rem;
+  /* height: 1.5rem; */
   margin-left: 0.2rem;
+  width: 4rem;
 }
 
 ul{
@@ -73,7 +74,7 @@ ul{
   height: 1rem;
   padding-right: 0.5rem;
   padding-top: 71px;
-  margin-top: 1.5rem;
+  margin-top: 2.2rem;
 }
 
 .containerHero{
@@ -137,6 +138,7 @@ form button{
   border-radius: 0.5rem; 
   margin-bottom: 2rem;
   padding: 0.5rem 2rem;
+  border: 0;
 }
 
 form div{
@@ -163,16 +165,6 @@ form textarea{
   align-items: center;
   justify-content: center;
 }
-
-/* .TelefonoForm{
-  height: 3rem;
-} */
-
-
-/* ::placeholder{
-  color: rgba(0, 0, 0, 0.8); 
-} */
-
 
 /* Config Footer */
 footer{
@@ -215,6 +207,9 @@ p{
   }
 
   /* Ajustes al nav bar */
+  header img{
+    width: auto;
+  }
   .container-grid-nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -251,9 +246,9 @@ p{
   span.cuadradito{
     grid-column: 1/2;
     padding-right: 6.625rem;
-    padding-top: 115px;
+    padding-top: 110px;
     padding-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 25px;
   }
 
   /* Distribución desktop */
