@@ -275,13 +275,22 @@ p{
     align-self: center;
   }
 
-  .containerForm{
+  /* Formulario */
+  .containerForm form{
     display: grid;
     grid-template-columns: 1fr  1fr;
     grid-template-rows: 1fr 1fr 2.5fr;
+    grid-gap: 1.5rem;
   }
 
+  .consulta-form-container, button{
+    grid-column: 1/-1;
+  }
   
-
+  button{
+    justify-self: center;
+    align-self: center;
+    width: 10rem;
+  }
 
 }
