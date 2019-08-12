@@ -7,19 +7,15 @@ function leerNombre(){
     let consulta = document.querySelector(".ConsultaForm").value;
     
     lista = [nombre, apellido,email, telefono,consulta];
-    // console.log(nombre);
-        // "Apellido: ", apellido, "\n",
-        // "Email: ", email, "\n", 
-        // "Telefono: ", telefono, "\n",
-        // "Consulta: ", consulta);
     for (i in lista){
         if (lista[i] === ""){
-            alert("Esta vacio vieja!");
+            alert("Error: Formulario vacío!");
             return
     }
     
+    //Otra forma de solucionarlo sería
     //  if (nombre || apellido || email || telefono || consulta=== ""){
-    //      alert("Esta vacio vieja!");
+    //      alert("Esta vacio!");
     //      return
     // }
     }
